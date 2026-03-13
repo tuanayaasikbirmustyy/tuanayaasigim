@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Barışalım mı?</title>
+</head>
+
+<body style="text-align:center;margin-top:100px;font-family:Arial;">
+
+<h1 id="yazi">Aşkım barışalım mı? ❤️</h1>
+
+<button onclick="evet()">Evet</button>
+<button onmouseover="kac()" id="hayir">Hayır</button>
+
+<script>
+
+function evet(){
+document.getElementById("yazi").innerText="AŞKIMMM ❤️";
+}
+
+function kac(){
+
+let btn=document.getElementById("hayir");
+
+btn.style.position="absolute";
+btn.style.left=Math.random()*window.innerWidth+"px";
+btn.style.top=Math.random()*window.innerHeight+"px";
+
+}
+
+</script>
+
+</body>
+</html>
